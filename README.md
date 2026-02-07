@@ -42,5 +42,5 @@ Employee User Project CRUD:
 - Must import dialog from chakra ui react not direct from the dialog file
 - Update function also working after correcting trim() - was unable to update
 - Used .tostring and placed in a variable and trimmed the info mutation
-- 
+
 
