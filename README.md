@@ -1,0 +1,46 @@
+Employee User Project CRUD:
+
+- Initiated a folder and file for users
+- Separated the index file from the endpoint file to create cleaner code
+- Imported code in index.js and tested endpoints to ensure functioning
+- Successfully tested api end points in Postman
+- Created API endpoint logic in a separate folder named routes and placed the logic code inside.
+- Created controller folder logic for frontend to talk to backend
+- Created a controller folder for the frontend to talk to the backend 
+- Put an employee.js file inside, creating async functions for employees to be exported
+- Imported employees file from the controller folder to the routers folder, where endpoints are located.
+- Updated endpoint logic to reflect the controller function
+- Create “utils” folder to connect to the Database
+- Imported pg and dotenv and setup and check for the variables are in the environment if not, throw and error.
+- API is hanging when sending test api code to getAllEmployee. After some debugging i was able to determine a syntax error with the template literal prevent the function from running.
+- Created utility function to send custom error messages
+- Created global error handler in index.js and centralizes it to make everything consistent
+- Imported customer error function into controller folder
+- Tested custom error get request on postman API and confirmed was functioning
+- Then tested create employee request and get request to ensure it functions properly
+- Created functionality to delete employee - tested specific employee in postman api and confirmed employee removed
+- Created UpdateEmployeeQuery - created query function to export for name, email, age, role, salary
+- Then went back into Postman and sent GET request for user data, took that data inserted in body->raw to update the information in the UPDATE request and confirmed pushed through.
+- Also test error by change endpoint url and confirmed error message received for updating on wrong endpoint
+- Created frontend folder and installed vite tool with reac -> js
+- Style html page mainly using chakra ui and some vanilla css
+- Also inserted table code from chakra ui documentation 
+- Added icon like delete and edit from imported react icons
+- Create global base url in root folder and defined url localhost:300 and exported 
+- Installed react-query to use
+- Created queryClient and imported in main.jsx
+- Created mutation function for the DELETE action to work
+- Installed react-hot-toast (a library used to show pop up messages)
+- Confirmed user data deleted in network response tab after create mutation function to DELETE
+- I accidentally removed the Stack import preventing data from loading on the page
+- And I also forgot to start the backend server
+- Everything is working properly now
+- Adding fields to the “add” button for people to enter  name, email, age, etc..
+- Created SelectRole to choose certain roles 
+- Update drop menu with proper roles and tested that input for values in field box are logging in console
+- Small technical difficulties again with importing the jsx functions .. just another syntax error issue corrected with correct path
+- Must import dialog from chakra ui react not direct from the dialog file
+- Update function also working after correcting trim() - was unable to update
+- Used .tostring and placed in a variable and trimmed the info mutation
+- 
+
